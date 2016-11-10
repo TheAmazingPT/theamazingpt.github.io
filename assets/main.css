@@ -80,7 +80,7 @@ a:hover {
 .header__link {
   display: inline-block;
 }
-@media (max-width: 640px) {
+@media (max-width: 530px) {
   .header {
     display: block;
   }
