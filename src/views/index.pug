@@ -1,0 +1,12 @@
+extends _layout
+
+include components/about/mixin
+include components/list-item/mixin
+
+block about
+  +about()
+
+block content
+  ul.list
+    each post in locals
+      +list-item(post)

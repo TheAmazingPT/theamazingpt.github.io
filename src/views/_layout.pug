@@ -1,0 +1,20 @@
+include components/header/mixin
+
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title The Amazing PT
+    link(href='/assets/main.css', rel='stylesheet')
+    link(href='https://code.cdn.mozilla.net/fonts/fira.css', rel='stylesheet')
+    link(href='/assets/favicon.ico', rel='shortcut icon', type='image/x-icon')
+  body
+    .wrapper
+      +header()
+
+      br
+      block about
+        hr.seperator
+      br
+
+      block content

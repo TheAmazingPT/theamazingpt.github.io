@@ -1,0 +1,21 @@
+{
+  "name": "blog",
+  "version": "0.0.1",
+  "description": "The Amazing [blog of] PT",
+  "scripts": {
+    "prepare": "rm -rf index.html assets/ posts/ && mkdir posts/ assets/",
+    "copy": "cp src/assets/* assets/",
+    "start": "npm run prepare && run-p copy stylus render server",
+    "render": "node tools/render-views.js",
+    "stylus": "stylus --watch --out assets/ src/styles/main.styl",
+    "server": "static ./"
+  },
+  "devDependencies": {
+    "markdown-it": "^8.1.0",
+    "moment": "^2.15.2",
+    "node-static": "^0.7.8",
+    "npm-run-all": "^2.3.0",
+    "pug": "^2.0.0-beta6",
+    "stylus": "^0.54.5"
+  }
+}
