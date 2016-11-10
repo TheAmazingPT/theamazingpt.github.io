@@ -15,6 +15,6 @@ Lets see how linking works in here: http://theamazingpt.github.io
 ![This is a test!](/assets/test.jpg)
 
 # This is a code example
-```
+```js
 const code = window ? true : false;
 ```
