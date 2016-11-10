@@ -29,7 +29,7 @@ a:hover {
   text-decoration: underlined;
 }
 .seperator {
-  margin: 0;
+  margin: 16px 0;
   padding: 0;
   border: 0;
   border-bottom: 1px dashed #0f0;
@@ -45,10 +45,8 @@ p {
 }
 .about {
   margin: 0;
-  padding: 8px 0;
+  padding: 0;
   text-align: justify;
-  border-top: 1px dashed;
-  border-bottom: 1px dashed;
 }
 .header {
   display: flex;
