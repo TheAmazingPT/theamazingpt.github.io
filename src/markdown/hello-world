@@ -7,3 +7,14 @@ This is just a small example posting, showing that the system is functional.
 
 # The next paragraph
 This is just a small example posting, showing that the system is functional. This is just a small example posting, showing that the system is functional.
+
+# This is now a linking test
+Lets see how linking works in here: http://theamazingpt.github.io
+
+# This is now an image test
+![This is a test!](/assets/test.jpg)
+
+# This is a code example
+```
+const code = window ? true : false;
+```

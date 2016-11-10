@@ -43,6 +43,14 @@ p {
   margin: 0 0 24px;
   padding: 0;
 }
+.content h1 a,
+p a {
+  color: #6f6;
+}
+.content h1 img,
+p img {
+  max-width: 100%;
+}
 .about {
   margin: 0;
   padding: 0;
@@ -58,12 +66,14 @@ p {
   padding: 0;
   font-weight: 600;
 }
+.header__title:hover {
+  text-decoration: none;
+}
 .header__links {
   text-align: right;
 }
 .header__link {
   display: inline-block;
-  color: #ff0;
 }
 .list-item {
   margin-bottom: 10px;
