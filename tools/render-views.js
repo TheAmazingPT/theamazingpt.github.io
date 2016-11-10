@@ -109,8 +109,11 @@ function writePostToDisk(post, dirpath) {
  * @returns {String} The HTML string of the index view
  */
 function renderIndexView(posts) {
-  const template = path.resolve(__dirname, '../src/views/index.pug');
-  return pug.renderFile(template, posts);
+  const srcPath = path.resolve(__dirname, '../src/views/');
+  const aboutPath = path.resolve(srcPath, 'components/about/about.txt');
+  const aboutText = fs.readFileSync(aboutPath, 'utf8');
+  const template = path.resolve(srcPath, 'index.pug');
+  return pug.renderFile(template, {posts, aboutText});
 }
 
 /**

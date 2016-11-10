@@ -5,9 +5,9 @@ include components/list-item/mixin
 
 block about
   hr.seperator
-  +about()
+  +about(locals.aboutText)
 
 block content
   ul.list
-    each post in locals
+    each post in locals.posts
       +list-item(post)
