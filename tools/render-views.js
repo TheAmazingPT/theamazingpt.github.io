@@ -84,13 +84,13 @@ function renderHTML(post) {
 }
 
 /**
- * Sort the posts by newest creation timestamp
+ * Sort the posts by newest creation timestamp (higher timestamp)
  * @param {Object} a First post
  * @param {Object} b Second post
  * @returns {Integer} The result
  */
 function sortByCreationDate(a, b) {
-  return a.timestamp - b.timestamp;
+  return b.timestamp - a.timestamp;
 }
 
 /**
