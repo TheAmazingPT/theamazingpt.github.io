@@ -5,15 +5,19 @@
   "scripts": {
     "prepare": "rm -rf index.html assets/ posts/ && mkdir posts/ assets/",
     "copy": "cp src/assets/* assets/",
-    "start": "npm run prepare && run-p copy stylus render server",
+    "start": "npm run prepare && run-p copy watch:stylus watch:render server",
+    "build": "run-s prepare copy stylus render",
+    "server": "static ./",
+    "stylus": "stylus --out assets/ src/styles/main.styl",
+    "watch:stylus": "npm run stylus -- --watch",
     "render": "node tools/render-views.js",
-    "stylus": "stylus --watch --out assets/ src/styles/main.styl",
-    "server": "static ./"
+    "watch:render": "nodemon -w src/views/ -w src/markdown/ tools/render-views.js"
   },
   "devDependencies": {
     "markdown-it": "^8.1.0",
     "moment": "^2.15.2",
     "node-static": "^0.7.8",
+    "nodemon": "^1.11.0",
     "npm-run-all": "^2.3.0",
     "pug": "^2.0.0-beta6",
     "stylus": "^0.54.5"

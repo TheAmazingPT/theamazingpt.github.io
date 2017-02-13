@@ -1,0 +1,31 @@
+Title: Installing FreeBSD 11 on Thinkpad T420
+Categories: freebsd
+Keywords: freebsd, 11, thinkpad, t420
+
+# Installing FreeBSD 11 on Thinkpad T420
+## Rationale
+All my young life i was a Windows guy, mainly because of the games i was playing on the computer.
+This stopped with Windows XP, eventhough I experienced some Windows 7. I dived into the world of GNU/Linux
+and its various distributions. My favourite one was Debian, preferably i would the netinstall image to construct
+my ideal working environment. Arch Linux was a solid alternative for my regular reinstall orgies.
+At some point I started to work for a company, which uses only Apple devices. There was a backend developer, who had the freedom
+to use Linux on his Dell notebook, which was my backdoor opportunity to install a FreeBSD 10 system on a Macbook Air.
+Maybe i will provide a write up on this topic in the future.
+
+Anyway, i have no idea why i had to bore you with my history of operating systems. At some point i just fell in love with FreeBSD,
+because of its organisation, philosophy and history.
+I love the purity and design of this system and I feel like I could learn and master this system at some point.
+And I also love ThinkPad's. Both form the perfect and most comfortable working environment for me. I spend my leisure time in this system too, of course.
+
+## Outline
+I am going to show the simple installation process of FreeBSD 11, how to setup networking and how to install desktop with i3.
+I am using i3 as a dm, Firefox as my browser and rxvt-unicode with tmux as my working tools.
+
+## Installation
+Its very simple. Dont worry!
+
+## Pre-Desktop Setup
+network
+
+## Desktop and some recommendations
+i3 etc.
