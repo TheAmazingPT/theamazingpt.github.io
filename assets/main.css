@@ -15,6 +15,7 @@ body {
   color: #0f0;
   font-family: 'Fira Mono', monospace;
   background-color: #000;
+  -webkit-text-size-adjust: 100%;
 }
 .wrapper {
   padding: 20px;
@@ -39,9 +40,22 @@ a:hover {
   padding: 0;
 }
 .content h1,
-p {
+.content p,
+.content pre {
   margin: 0 0 24px;
   padding: 0;
+}
+.content a {
+  color: #6f6;
+}
+.content img,
+.content pre {
+  max-width: 100%;
+}
+.content pre {
+  border: 1px dashed;
+  padding: 5px;
+  overflow-x: auto;
 }
 .about {
   margin: 0;
@@ -58,12 +72,25 @@ p {
   padding: 0;
   font-weight: 600;
 }
+.header__title:hover {
+  text-decoration: none;
+}
 .header__links {
   text-align: right;
 }
 .header__link {
   display: inline-block;
-  color: #ff0;
+}
+@media (max-width: 530px) {
+  .header {
+    display: block;
+  }
+  .header__links {
+    text-align: left;
+  }
+  .header__link {
+    font-size: 12px !important;
+  }
 }
 .list-item {
   margin-bottom: 10px;

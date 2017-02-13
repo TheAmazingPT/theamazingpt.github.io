@@ -7,10 +7,19 @@
     margin: 0
     padding: 0
     font-weight: 600
+    &:hover
+      text-decoration: none
 
   &__links
     text-align: right
 
   &__link
     display: inline-block
-    color: $link-color
+
+@media (max-width: 530px)
+  .header
+    display: block
+  .header__links
+    text-align: left
+  .header__link
+    font-size: 12px !important

@@ -3,7 +3,16 @@ Categories: general
 Keywords: test, hello, world
 
 # Hello world
-This is just a small example posting, showing that the system is functional.
+I got a new blog. I hope to retrieve my old blog posts, so that they don't get lost.
+I have many plans for interesting article series and already a few drafts.
 
-# The next paragraph
-This is just a small example posting, showing that the system is functional. This is just a small example posting, showing that the system is functional.
+This blog is hosted as a Github Page in this Repository: https://github.com/TheAmazingPT/theamazingpt.github.io
+Every article will be its own "article-branch" and has to be merged into master.
+Because of that you might follow the draft process in the respective "article-branches" or pull requests.
+
+I am planning to write a lot about FreeBSD and my findings in Chicken Scheme, but the topics will be basically
+all about web development and everything, which is attached to it. The articles will also be mostly quite short.
+
+I am now starting to write a blog again, because i have sometimes so many ideas in my head, which i simply
+have to write out. But it could also help me to reflect myself and my ideas better. I am also always curious,
+what i will think about my first articles in a year or two.

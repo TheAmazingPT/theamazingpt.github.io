@@ -12,6 +12,7 @@ html, body
   color: $main-color
   font-family: 'Fira Mono', monospace
   background-color: $main-background-color
+  -webkit-text-size-adjust: 100%
 
 .wrapper
   padding: 20px
@@ -34,6 +35,16 @@ a
   margin: 0
   padding: 0
 
-.content h1, p
-  margin: 0 0 24px
-  padding: 0
+.content
+  h1, p, pre
+    margin: 0 0 24px
+    padding: 0
+  a
+    color: $link-color-content
+  img, pre
+    max-width: 100%
+  pre
+    border: 1px dashed
+    padding: 5px
+    overflow-x: auto
+
